@@ -1,0 +1,21 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "is_student": false,
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "zipcode": "10001"
+  },
+  "hobbies": ["reading", "coding", "hiking"],
+  "scores": {
+    "math": 95,
+    "english": 88,
+    "science": 92
+  },
+  "metadata": {
+    "created_at": "2024-01-01",
+    "updated_at": "2024-04-17",
+    "tags": ["rust", "json", "parser"]
+  }
+}

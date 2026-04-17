@@ -1,0 +1,39 @@
+{
+  "null_value": null,
+  "empty_object": {},
+  "empty_array": [],
+  "nested": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "deep_value": "very deep!"
+        }
+      }
+    }
+  },
+  "mixed_array": [
+    "string",
+    42,
+    true,
+    false,
+    null,
+    {
+      "object_in_array": "yes"
+    },
+    [
+      "nested_array"
+    ]
+  ],
+  "special_chars": "Line 1\nLine 2\tTab",
+  "unicode": "中文 Español Français",
+  "numbers": {
+    "integer": 123,
+    "float": 3.14159,
+    "negative": -42,
+    "scientific": 1.23e10
+  },
+  "booleans": {
+    "true": true,
+    "false": false
+  }
+}

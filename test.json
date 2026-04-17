@@ -1,0 +1,16 @@
+{
+  "project": "JSON Parser Demo",
+  "language": "Rust",
+  "version": 1.0,
+  "active": true,
+  "dependencies": ["serde", "serde_json"],
+  "settings": {
+    "debug_mode": false,
+    "log_level": "info",
+    "output": {
+      "format": "text",
+      "color": true
+    }
+  },
+  "authors": ["Alice", "Bob", "Charlie"]
+}
