@@ -43,12 +43,12 @@ fn print_json_key_values(value: &Value, prefix: &str) {
 }
 
 fn main() {
-    // 读取JSON文件
+            // Read JSON file
     let file_path = "data.json";
     
     match fs::read_to_string(file_path) {
         Ok(content) => {
-            // 解析JSON
+            // Parse JSON
             match serde_json::from_str::<Value>(&content) {
                 Ok(json_value) => {
                     println!("Successfully parsed JSON from '{}'", file_path);
@@ -56,7 +56,7 @@ fn main() {
                     println!("All key-value pairs:");
                     println!("==========================================");
                     
-                    // 打印所有键值对
+                    // Print all key-value pairs
                     print_json_key_values(&json_value, "");
                     
                     println!("==========================================");
