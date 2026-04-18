@@ -1,39 +1,60 @@
 {
-  "null_value": null,
-  "empty_object": {},
-  "empty_array": [],
-  "nested": {
-    "level1": {
-      "level2": {
-        "level3": {
-          "deep_value": "very deep!"
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "profile": {
+        "age": 28,
+        "city": "Tokyo",
+        "interests": ["coding", "reading", "travel"],
+        "preferences": {
+          "theme": "dark",
+          "language": "en",
+          "notifications": true
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "profile": {
+        "age": 32,
+        "city": "London",
+        "interests": ["music", "sports", "cooking"],
+        "preferences": {
+          "theme": "light",
+          "language": "fr",
+          "notifications": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "profile": {
+        "age": 25,
+        "city": "New York",
+        "interests": ["art", "photography", "hiking"],
+        "preferences": {
+          "theme": "dark",
+          "language": "es",
+          "notifications": true
         }
       }
     }
-  },
-  "mixed_array": [
-    "string",
-    42,
-    true,
-    false,
-    null,
-    {
-      "object_in_array": "yes"
-    },
-    [
-      "nested_array"
-    ]
   ],
-  "special_chars": "Line 1\nLine 2\tTab",
-  "unicode": "中文 Español Français",
-  "numbers": {
-    "integer": 123,
-    "float": 3.14159,
-    "negative": -42,
-    "scientific": 1.23e10
-  },
-  "booleans": {
-    "true": true,
-    "false": false
+  "metadata": {
+    "total_users": 3,
+    "created_at": "2024-01-15",
+    "updated_at": "2024-04-18",
+    "tags": ["users", "profiles", "test"],
+    "settings": {
+      "pagination": true,
+      "page_size": 10,
+      "sort_by": "name"
+    }
   }
 }
